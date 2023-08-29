@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Images/header-logo.jpg" >
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="feature.html">New & Featured</a></li>
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="sale.html">Sale</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="form">
+        <span class="title">YOUR ACCOUNT FOR NIKE</span>
+        <label for="email" class="label">Email</label>
+        <input type="email" id="email" name="email" required="" class="input">
+        <label for="password" class="label">Password</label>
+        <input type="password" id="password" name="password" required="" class="input">
+        <span class="note">By logging in, you agree to Nike's <a
+                href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&country=IL&language=en&mobileStatus=false&requestType=redirect&uxId=com.nike.commerce.nikedotcom.web">Privacy
+                Policy</a> and <a
+                href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&country=IL&language=en&mobileStatus=false&requestType=redirect&uxId=com.nike.commerce.nikedotcom.web">Terms
+                of Use</a>.</span>
+        <button type="submit" class="submit">Register</button>
+        <p class="sign-up">Not a Member? <button class="sign-btn" onclick="sign()">Sign up.</button></p>
+    </div>
+
+    <div class="form-2">
+        <span class="title">CREATE YOUR NIKE ACCOUNT</span>
+        <label for="email" class="label">Email</label>
+        <input type="email" id="email" name="email" required="" class="input">
+        <label for="password" class="label">Password</label>
+        <input type="password" id="password" name="password" required="" class="input">
+        <label for="name" class="label">First Name</label>
+        <input type="text" id="name" name="name" required="" class="input">
+        <label for="name" class="label">last Name</label>
+        <input type="text" id="name" name="name" required="" class="input">
+        <span class="note">By creating an account, you agree to Nike's <a
+                href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&country=IL&language=en&mobileStatus=false&requestType=redirect&uxId=com.nike.commerce.nikedotcom.web">Privacy
+                Policy</a> and <a
+                href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&country=IL&language=en&mobileStatus=false&requestType=redirect&uxId=com.nike.commerce.nikedotcom.web">Terms
+                of Use</a>.</span>
+        <button type="submit" class="submit">Register</button>
+        <p class="sign-up">Already a Member? <a onclick="log()" href="">Sign in.</a></p>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

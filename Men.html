@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Images/header-logo.jpg" >
+
+</head>
+<body>
+    <header class="head">
+
+        <div class="logo-header"><a href="index.html"><img
+            src="Images/nike-logo-name-white-clothes-design-icon-abstract-football-illustration-with-black-background-free-vector.jpg"
+            alt=""></a></div>
+    </header>
+    <div class="head-two under">
+        <div class="one">
+
+            <!--
+                <i onclick="show()" class=" fas fa-bars bar-icon" id="menu-icon"></i>
+            -->
+            <a href="index.html"><img class="logo-img" src="Images/260_nike.jpg" alt=""></a>
+           
+
+        </div>  
+
+        <div class="nav">
+
+            <ul>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="feature.html">New & Featured</a></li>
+                
+            </ul>
+        </div>
+
+
+
+        <div class="cart-back">
+            <div class="big-cart">
+                <i class="fa fa-duotone fa-bag-shopping" onclick="showCart()"></i>
+                <div class="notify"></div>
+            </div>
+            
+            <i id="bar"class="fa-solid fa-bars" onclick="showNav()"></i>            
+        </div>
+
+    </div>
+
+
+    <div class="small-nav">
+        <ul>
+            <li><a href="feature.html">New & Featured</a></li>
+            <li><a href="Men.html">Men</a></li>
+            <li><a href="Women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="sale.html">Sale</a></li>
+
+        </ul>
+    </div>
+
+
+    <div class="cart-div">
+        <p class="cal">Your Total is:$ <label for="" class="total">0</label></p>
+        <button onclick="purchase()" class="confirm-btn">Confirm</button>
+    </div>
+
+
+    <div class="confirm-message">
+        
+        <div class="message-content">
+            <div class="message-img">
+                <img width="200px" height="100px" src="Images/messageLogo.jpg" alt="">
+            </div>
+            <h1>Thank You For Making This Order</h1>
+            <p>Your Order Consists of <label class="num" for=""></label> Item(s)</p>
+            <p>The total is $ <label class="order-total" for=""></label></p>
+            <button class="message-btn" onclick="removeConfirm()">OK</button>
+        </div>
+    </div>
+    
+
+
+    <div class="men-border-offer">
+        <div class="workout">
+            <img src="Images/workout-essentials.webp" alt="">
+            <div class="men-border-content">
+                <h3>Summer Essentials</h3>
+                <button onclick="goToSummer()">Shop</button>
+            </div>
+        </div>
+
+        <div class="shoes-border">
+            <img src="Images/shoes.webp" alt="">
+            <div class="men-border-content">
+                <h3>The Latest & Greatest </h3>
+                <button onclick="goToGear()">Shop</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <section class="product"> 
+        <h2 class="product-category">Now Trending</h2>
+        <button class="pre-btn"><img src="Images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="Images/arrow.png" alt=""></button>
+        <div class="product-container">
+
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/t1.webp" class="product-thumb" alt="">
+                    <button onclick="addToCart()"  class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Force</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">30</label></span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/t2.webp" class="product-thumb" alt="">
+                    <button onclick="addToCart()" class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Max Alpha Trainer</h3>
+                    <p class="product-short-description">Men's Training Shoes</p>
+                    <span class="price">$<label for="">20</label></span>  
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/t3.webp" class="product-thumb" alt="">
+                    <button onclick="addToCart()"  class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Force 1'07</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">20</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/t4.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Air Jordan 1 Mid</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">40</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/t5.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Milwaukee Bucks Icon Edition</h3>
+                    <p class="product-short-description">Men's Nike NBA Swingman Shorts</p>
+                    <span class="price">$ <label for="">50</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/t7.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Jordan Dri-FIT Sport</h3>
+                    <p class="product-short-description">Men's Diamond Shorts</p>
+                    <span class="price">$ <label for="">55</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/t8.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Jordan Stadium 90</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">40</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/n8.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Pegasus '89</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">45</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/n9.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Force 1 Next Nature</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">20</label></span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="product"> 
+        <h2 class="product-category">Shoes</h2>
+        <button class="pre-btn"><img src="Images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="Images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/a1.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Force 1'07</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">30</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/a2.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Go FlyEase</h3>
+                    <p class="product-short-description">Easy On/Off Shoes</p>
+                    <span class="price">$ <label for="">20</label></span>  
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/a3.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Monarch IV</h3>
+                    <p class="product-short-description">Men's Training Shoes</p>
+                    <span class="price">$ <label for="">20</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/a4.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Air Jordan 1 Low</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">40</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/a5.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Force 1'07</h3>
+                    <p class="product-short-description">Men's Shoe</p>
+                    <span class="price">$ <label for="">50</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/a6.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Air Jordan 1 Low G</h3>
+                    <p class="product-short-description">Golf Shoes</p>
+                    <span class="price">$ <label for="">55</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/a7.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Court Vision Low</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">40</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/a8.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Force 1'07</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">45</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/n9.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Force 1 Next Nature</h3>
+                    <p class="product-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">20</label></span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="product"> 
+        <h2 class="product-category">Clothing</h2>
+        <button class="pre-btn"><img src="Images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="Images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/c1.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Sportswear Club Fleece</h3>
+                    <p class="product-short-description">Men's Cargo Trousers</p>
+                    <span class="price">$ <label for="">30</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/c2.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Sportswear Club</h3>
+                    <p class="product-short-description">Men's Graphic Shorts</p>
+                    <span class="price">$ <label for="">20</label></span>  
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/c3.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Sportswear Club</h3>
+                    <p class="product-short-description">Men's T-Shirt</p>
+                    <span class="price">$ <label for="">20</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/c4.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Authentics</h3>
+                    <p class="product-short-description">Men's Warm-Up Top</p>
+                    <span class="price">$ <label for="">40</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/c5.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Dri-FIT</h3>
+                    <p class="product-short-description">Men's Fitness T-Shirt</p>
+                    <span class="price">$ <label for="">50</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/c6.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Paris Saint-Germain</h3>
+                    <p class="product-short-description">Men's Jordan Knit Football Pants</p>
+                    <span class="price">$ <label for="">55</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/c7.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Club Alumni</h3>
+                    <p class="product-short-description">Men's French Terry Shorts</p>
+                    <span class="price">$ <label for="">40</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/c8.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Zion Dri-FIT</h3>
+                    <p class="product-short-description">Men's Trousers</p>
+                    <span class="price">$ <label for="">45</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/c9.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Sportswear Tech Pack</h3>
+                    <p class="product-short-description">Men's Woven Hooded Jacket</p>
+                    <span class="price">$ <label for="">20</label></span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+    <section class="product"> 
+        <h2 class="product-category">Accessories & Equipments</h2>
+        <button class="pre-btn"><img src="Images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="Images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/e1.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Sportswear</h3>
+                    <p class="product-short-description">Beanie</p>
+                    <span class="price">$ <label for="">30</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/e2.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Sportswear Legacy 91</h3>
+                    <p class="product-short-description">Adjustable Cap</p>
+                    <span class="price">$ <label for="">20</label></span>  
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/e3.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Air Max</h3>
+                    <p class="product-short-description">Cross-Body Bag(4L)</p>
+                    <span class="price">$ <label for="">20</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/e4.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Heritage</h3>
+                    <p class="product-short-description">Cross-Body Bag(4L)</p>
+                    <span class="price">$ <label for="">40</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/e5.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Sportswear PRM</h3>
+                    <p class="product-short-description">Backpack (26L)</p>
+                    <span class="price">$ <label for="">50</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/e6.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Sportswear Heritage86</h3>
+                    <p class="product-short-description">Adjustable Cap</p>
+                    <span class="price">$ <label for="">55</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/e7.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Premium</h3>
+                    <p class="product-short-description">Cross-Body Bag(4L)</p>
+                    <span class="price">$ <label for="">40</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="Images/e8.webp" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Everyday Plus Cushioned</h3>
+                    <p class="product-short-description">Ankle Socks</p>
+                    <span class="price">$ <label for="">45</label></span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+
+                    <img src="Images/e9.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-brand">Nike Academy</h3>
+                    <p class="product-short-description">Football</p>
+                    <span class="price">$ <label for="">20</label></span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="foot">
+        <div class="row footer-top">
+
+
+
+            <div class="box-two col-3 col-s-12">
+                <div class="center">
+                    <p>Get Help <i class="fa-solid fa-caret-up fa-rotate-180" onclick="showListTwo()"></i></p>
+                    <ul class="list-two">
+                        <li><a href="contact.html" target="_blank">Order Status</a></li>
+                        <li><a href="https://www.nike.com/il/help/a/shipping-delivery-gs" target="_blank">Shipping and Delivery</a></li>
+                        <li><a href="https://www.nike.com/il/help/a/returns-policy-gs" target="_blank">Returns</a></li>
+                        <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="box-one col-6 col-s-12">
+                <div class="footer-images">
+                    <img width="120px" height="90px" src="Images/header-logo.jpg" alt="">
+                    <img width="120px" height="90px" src="Images/basketball.jpg" alt="">
+                </div>
+                <p>At Nike, we strive to ignite the athlete within everyone. Our passion for innovation, performance,
+                    and inspiration drives us to create exceptional products and experiences. Join us on the journey to
+                    unleash your full potential. Just Do It</p>
+                <div class="icons">
+                    <a href="https://www.instagram.com/nike/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/nike/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/nike" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/NIKE" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+            <div class="box-three col-3 col-s-12">
+                <div class="center">
+                    <p>About Nike <i onclick="showListOne()" class="fa-solid fa-caret-up fa-rotate-180"></i></p>
+                    <ul class="list-one">
+                        <li><a href="https://about.nike.com/en/newsroom" target="_blank">News</a></li>
+                        <li><a href="https://jobs.nike.com/" target="_blank">Careers</a></li>
+                        <li><a href="https://investors.nike.com/Home/default.aspx" target="_blank">Investors</a></li>
+                        <li><a href="https://www.nike.com/il/sustainability" target="_blank">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom row">
+            <div class="copyWrite col-6 col-s-12">
+                <p>© 2023 Nike, Inc. All Rights Reserved</p>
+            </div>
+            <div class="page-info col-6 col-s-12">
+                <ul>
+                    <li><a href="https://www.nike.com/il/nike-factory-store" target="_blank">Guides</a></li>
+                    <li><a
+                            href="https://agreementservice.svs.nike.com/il/en_gb/rest/agreement?agreementType=termsOfUse&uxId=com.nike.unite&country=IL&language=en&requestType=redirect" target="_blank">Terms
+                            of Use</a></li>
+                    <li><a href="https://www.eshopworld.com/shoppers/help/terms-and-conditions-of-sale-en/" target="_blank">Terms of
+                            Sale</a></li>
+                    <li><a href="https://www.nike.com/il/help/a/company-details" target="_blank">Company Details</a></li>
+                    <li><a
+                            href="https://agreementservice.svs.nike.com/il/en_gb/rest/agreement?agreementType=privacyPolicy&uxId=com.nike.unite&country=IL&language=en&requestType=redirect" target="_blank">Privacy
+                            & Cookie Policy</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

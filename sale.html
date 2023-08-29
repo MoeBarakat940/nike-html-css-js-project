@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Images/header-logo.jpg" >
+</head>
+<body>
+    <header class="head">
+
+        <div class="logo-header"><a href="index.html"><img
+            src="Images/nike-logo-name-white-clothes-design-icon-abstract-football-illustration-with-black-background-free-vector.jpg"
+            alt=""></a></div>
+    </header>
+    <div class="head-two under">
+        <div class="one">
+
+            <!--
+                <i onclick="show()" class=" fas fa-bars bar-icon" id="menu-icon"></i>
+            -->
+            <a href="index.html"><img class="logo-img" src="Images/260_nike.jpg" alt=""></a>
+           
+
+        </div>  
+
+        <div class="nav">
+
+            <ul>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="feature.html">New & Featured</a></li>
+                
+            </ul>
+        </div>
+
+
+
+        <div class="cart-back">
+            <div class="big-cart">
+                <i class="fa fa-duotone fa-bag-shopping" onclick="showCart()"></i>
+                <div class="notify"></div>
+            </div>
+            
+            <i id="bar"class="fa-solid fa-bars" onclick="showNav()"></i>            
+        </div>
+
+    </div>
+
+
+    <div class="small-nav">
+        <ul>
+            <li><a href="feature.html">New & Featured</a></li>
+            <li><a href="Men.html">Men</a></li>
+            <li><a href="Women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="sale.html">Sale</a></li>
+
+        </ul>
+    </div>
+
+
+    
+
+
+
+    <div class="cart-div">
+        <p class="cal">Your Total is:$ <label for="" class="total">0</label></p>
+        <button onclick="purchase()" class="confirm-btn">Confirm</button>
+    </div>
+
+
+    <div class="confirm-message">
+        
+        <div class="message-content">
+            <div class="message-img">
+                <img width="200px" height="100px" src="Images/messageLogo.jpg" alt="">
+            </div>
+            <h1>Thank You For Making This Order</h1>
+            <p>Your Order Consists of <label class="num" for=""></label> Item(s)</p>
+            <p>The total is $ <label class="order-total" for=""></label></p>
+            <button class="message-btn" onclick="removeConfirm()">OK</button>
+            
+        </div>
+    </div>
+
+
+
+
+
+    <h1  class="sale-title"><span>Nike Sale</span></h1>
+
+
+
+    <div class="sale-border">
+        <div class="sale-border-content">
+            <h3>Shop all Styles</h3>
+            <h1>UP TO 50% OFF</h1>
+        </div>
+    </div>
+
+
+
+
+    <div id="men-sale" class="men-sale">
+        <h2 class="sale-category">Sales For Men</h2>
+        <div class="sale-cards">
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="Images/m8.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Sportwear Air</h3>
+                    <p class="sale-short-description">Men's T-shirt</p>
+                    <span class="price">$ <label for="">40</label></span><span class="actual-price">$50</span>
+                </div>
+            </div>
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">30% off</span>
+                    <img src="Images/m2.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Sportwear</h3>
+                    <p class="sale-short-description">Men's Shorts</p>
+                    <span class="price">$ <label for="">43</label></span><span class="actual-price">$60</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">40% off</span>
+                    <img src="Images/m3.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Benassi GDI</h3>
+                    <p class="sale-short-description">Men's Slide</p>
+                    <span class="price">$ <label for="">30</label></span><span class="actual-price">$50</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/m4.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Air Huarche</h3>
+                    <p class="sale-short-description">Men's Shoes</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/m5.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Sportwear</h3>
+                    <p class="sale-short-description">Men's Sleece Pullover Hoodie</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="Images/m6.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Jordan Dri-FIT Sport</h3>
+                    <p class="sale-short-description">Men's Long-Sleeve Top</p>
+                    <span class="price">$ <label for="">40</label></span><span class="actual-price">$50</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">30% off</span>
+                    <img src="Images/m0.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Paris Sain-Germain</h3>
+                    <p class="sale-short-description">Men's T-Shirt</p>
+                    <span class="price">$ <label for="">28</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/m7.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Dri-FIT Pehnom</h3>
+                    <p class="sale-short-description">Men's Knit Trail Running Trousers</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="women-sale" class="women-sale">
+        <h2 class="sale-category">Sales For Women</h2>
+        <div class="sale-cards">
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/w1.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Venture Runner</h3>
+                    <p class="sale-short-description">Women's Shoe</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/w2.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Air</h3>
+                    <p class="sale-short-description">Women's Oversized Hoodie</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">30% off</span>
+                    <img src="Images/w3.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">NikeCourt Air Zoom Pro</h3>
+                    <p class="sale-short-description">Women's Tennis Shoes</p>
+                    <span class="price">$ <label for="">42</label></span><span class="actual-price">$60</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/w4.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Sportswear Essentials</h3>
+                    <p class="sale-short-description">Women's Tennis Shoes</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="Images/w5.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Sportswear Essentials</h3>
+                    <p class="sale-short-description">Nike Sportswear Essentials</p>
+                    <span class="price">$ <label for="">32</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/w6.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Swoosh Run</h3>
+                    <p class="sale-short-description">Women's Short-Sleeve Top</p>
+                    <span class="price">$ <label for="">25</label></span><span class="actual-price">$50</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">25% off</span>
+                    <img src="Images/w7.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Netherlands 2022/23</h3>
+                    <p class="sale-short-description">Women's Nike Dri-FIT</p>
+                    <span class="price">$ <label for="">37</label></span><span class="actual-price">$50</span>
+                </div>
+            </div>
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/w8.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Sportswear Fleece</h3>
+                    <p class="sale-short-description">Women Over-Sized Sweatshirt</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="kids-sale" class="kids-sale">
+        <h2 class="sale-category">Sales For Kids</h2>
+        <div class="sale-cards">
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/k1.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Paris Saint-Germainn Away</h3>
+                    <p class="sale-short-description">Kids' Football Top</p>
+                    <span class="price">$ <label for="">15</label></span><span class="actual-price">$30</span>
+                </div>
+            </div>
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="Images/k2.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Dynamo Go</h3>
+                    <p class="sale-short-description">Younger Kids' Shoes</p>
+                    <span class="price">$ <label for="">32</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/k3.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">FFF Strike</h3>
+                    <p class="sale-short-description">Older Kids' Nike Dri-FIT Football Drill</p>
+                    <span class="price">$ <label for="">30</label></span><span class="actual-price">$60</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">30% off</span>
+                    <img src="Images/k4.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Netherlands Academy Pro</h3>
+                    <p class="sale-short-description">Older's Kids' Nike Football Jacket</p>
+                    <span class="price">$ <label for="">49</label></span><span class="actual-price">$70</span>
+                </div>
+            </div>
+
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/k5.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Paris Saint-Germain</h3>
+                    <p class="sale-short-description">Older Kids' Hooded Jacket</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/k6.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Air Max Motif</h3>
+                    <p class="sale-short-description">Older Kids's Shoe</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="Images/k7.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Nike Sportswear</h3>
+                    <p class="sale-short-description">Older Kid's (Boy's) Pullover</p>
+                    <span class="price">$ <label for="">40</label></span><span class="actual-price">$50</span>
+                </div>
+            </div>
+
+            <div class="sale-card">
+                <div class="sale-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="Images/k9.webp" alt="" class="sale-thumb">
+                    <button class="card-btn">add to wishlit</button>
+                </div>
+                <div class="sale-info">
+                    <h3 class="sale-brand">Netherlands 2022/23</h3>
+                    <p class="sale-short-description">Younger Kid's Football Kit</p>
+                    <span class="price">$ <label for="">20</label></span><span class="actual-price">$40</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="foot">
+        <div class="row footer-top">
+
+
+
+            <div class="box-two col-3 col-s-12">
+                <div class="center">
+                    <p>Get Help <i class="fa-solid fa-caret-up fa-rotate-180" onclick="showListTwo()"></i></p>
+                    <ul class="list-two">
+                        <li><a href="contact.html" target="_blank">Order Status</a></li>
+                        <li><a href="https://www.nike.com/il/help/a/shipping-delivery-gs" target="_blank">Shipping and Delivery</a></li>
+                        <li><a href="https://www.nike.com/il/help/a/returns-policy-gs" target="_blank">Returns</a></li>
+                        <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="box-one col-6 col-s-12">
+                <div class="footer-images">
+                    <img width="120px" height="90px" src="Images/header-logo.jpg" alt="">
+                    <img width="120px" height="90px" src="Images/basketball.jpg" alt="">
+                </div>
+                <p>At Nike, we strive to ignite the athlete within everyone. Our passion for innovation, performance,
+                    and inspiration drives us to create exceptional products and experiences. Join us on the journey to
+                    unleash your full potential. Just Do It</p>
+                <div class="icons">
+                    <a href="https://www.instagram.com/nike/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/nike/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/nike" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/NIKE" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+            <div class="box-three col-3 col-s-12">
+                <div class="center">
+                    <p>About Nike <i onclick="showListOne()" class="fa-solid fa-caret-up fa-rotate-180"></i></p>
+                    <ul class="list-one">
+                        <li><a href="https://about.nike.com/en/newsroom" target="_blank">News</a></li>
+                        <li><a href="https://jobs.nike.com/" target="_blank">Careers</a></li>
+                        <li><a href="https://investors.nike.com/Home/default.aspx" target="_blank">Investors</a></li>
+                        <li><a href="https://www.nike.com/il/sustainability" target="_blank">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom row">
+            <div class="copyWrite col-6 col-s-12">
+                <p>© 2023 Nike, Inc. All Rights Reserved</p>
+            </div>
+            <div class="page-info col-6 col-s-12">
+                <ul>
+                    <li><a href="https://www.nike.com/il/nike-factory-store" target="_blank">Guides</a></li>
+                    <li><a
+                            href="https://agreementservice.svs.nike.com/il/en_gb/rest/agreement?agreementType=termsOfUse&uxId=com.nike.unite&country=IL&language=en&requestType=redirect" target="_blank">Terms
+                            of Use</a></li>
+                    <li><a href="https://www.eshopworld.com/shoppers/help/terms-and-conditions-of-sale-en/" target="_blank">Terms of
+                            Sale</a></li>
+                    <li><a href="https://www.nike.com/il/help/a/company-details" target="_blank">Company Details</a></li>
+                    <li><a
+                            href="https://agreementservice.svs.nike.com/il/en_gb/rest/agreement?agreementType=privacyPolicy&uxId=com.nike.unite&country=IL&language=en&requestType=redirect" target="_blank">Privacy
+                            & Cookie Policy</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

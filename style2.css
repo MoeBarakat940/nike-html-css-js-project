@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    
+  }
+
+body{
+    background-image: url(Images/qPqOcaf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav-bar ul li{
+    list-style: none;
+    float: left;
+    padding: 13px;
+   
+    
+}
+
+.nav-bar a{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.nav-bar a:hover{
+    border-bottom: 2px solid #fff;
+    
+}
+
+
+.form, .form-2 {
+    max-width: 320px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 20px;
+    box-shadow: 0px 0px 0px 4px rgba(125, 125, 210, 0.185);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 80px  auto;
+  }
+
+  .form-2{
+    display: none;
+    margin: 60px auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: rgb(242, 242, 242);
+  }
+  
+  .label {
+    color: white;
+    margin-bottom: 4px;
+  }
+  
+  .input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1rem;
+    color: #4a5568;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .form-2 .input{
+    margin-bottom: 5px;
+  }
+  
+  .input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #cbd5e0;
+  }
+  
+  .input:valid {
+    border: 1px solid green;
+  }
+  
+  .input:invalid {
+    border: 1px solid rgba(14, 14, 14, 0.205);
+  }
+  
+  .submit {
+    background-color: #1a202c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+      
+   
+  .note{
+    align-items: baseline;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+  }
+
+  .note a{
+    text-decoration: underline;
+    color: #fff;
+  }
+      
+  .sign-up{
+    text-align: center;
+    margin-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #c0c3c7;
+  }
+
+  .sign-up a{
+    color: #fff;
+    text-decoration: underline;
+    
+  }
+
+  .form .sign-btn{
+    background-color: transparent;
+    border: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    
+  }
+
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    
+    [class*="col-"] {
+    float: left;
+    padding: 15px;
+    }
+    
+    /* For mobile phones: */
+    [class*="col-"] {
+    width: 100%;
+    }
+    
+    @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .nav-bar a{
+        font-size: 20px;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .form, .form-2 {
+        max-width: 420px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-2{
+        display: none;
+        margin: 20px auto;
+      }
+
+}
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        .nav-bar a{
+            font-size: 20px;
+        }
+
+        .title{
+            font-size: 2rem;
+        }
+
+        .form, .form-2 {
+            max-width: 420px;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .form-2{
+            display: none;
+            margin: 20px auto;
+          }
+    }
+
+   
